@@ -1,0 +1,34 @@
+
+//背景色
+$bgPrimary: #009;
+$bgWhite: #fff;
+$bgGrey: #f4f4f4;
+$bgSuccess: #41B883;
+$bgError: #DE5145;
+
+//文字色
+$fontPrimary: #009;
+$fontWhite: #fff;
+$fontBlack: #000;
+$fontGrey: #ccc;
+$fontSuccess: #41B883;
+$fontError: #DE5145;
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+*{
+    box-sizing: border-box;
+}
+#app{
+    width: 100%;
+    min-width: 1240px;
+}
+.app-header{
+    padding: 20px 40px;
+    width: 100%;
+    background-color: $bgGrey;
+    color: $fontBlack;
+    transition: all .1s;
+}
+.app-footer{
+    @extend .app-header;
+}
