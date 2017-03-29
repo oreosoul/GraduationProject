@@ -1,19 +1,7 @@
-// 背景色
-$bgPrimary: #009;
-$bgWhite: #fff;
-$bgGrey: #f4f4f4;
-$bgSuccess: #41B883;
-$bgError: #DE5145;
-
-//文字色
-$fontPrimary: #009;
-$fontWhite: #fff;
-$fontBlack: #000;
-$fontGrey: #ccc;
-$fontSuccess: #41B883;
-$fontError: #DE5145;
+@import "./colors.scss";
 
 html{
+    font-size: 100%;
     height: 100%;
     background-color: $bgGrey;
 }
@@ -21,22 +9,71 @@ body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, fo
 *{
     box-sizing: border-box;
 }
+h1{font-size: 2.4rem;}h2{font-size: 2rem;}h3{font-size: 1.6rem;}h4{font-size: 1.4rem;}h5{font-size: 1.2rem;}
+.float-right{
+    float: right;
+}
+.float-left{
+    float: left;
+}
 #app{
     width: 100%;
     min-width: 1240px;
 }
 .app-header{
+	display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
     padding: 20px 40px;
     width: 100%;
     background-color: $bgGrey;
     color: $fontBlack;
     transition: all .1s;
+    .ivu-menu-light{
+        background: transparent;
+    }
 }
 .app-footer{
     @extend .app-header;
+    font-size: 12px;
+    padding: 30px 40px;
+    justify-content: center;
+    p{
+        text-align: center;
+	    margin-top: 6px;
+    }
+    a{
+        color: #666666;
+        &:hover{
+            color: $fontPrimary;
+	        text-decoration: underline;
+        }
+    }
+    .footer-list{
+        ul{
+            overflow: hidden;
+            li{
+                text-align: center;
+                padding: 0 12px;
+                float: left;
+            }
+        }
+    }
 }
 .app-container{
-    background: $bgWhite;
+    background: $bgGrey;
     margin: 0 auto;
+    // margin-top: 121px;
     max-width: 1200px;
 }
+// .cheuk-container{
+// 	box-sizing: border-box;
+// 	max-width: 1200px;
+// 	width: 100%;
+// 	padding: 40px;
+// 	margin: 0 auto;
+// }
+// .cheuk-inner{
+// 	padding-top: 20px;
+// 	position: relative;	
+// }
