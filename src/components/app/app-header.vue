@@ -1,8 +1,9 @@
 <template>
-<div class="app-header">
+<Affix>
+  <div class="app-header demo-affix">
     <img src="../../assets/images/title.jpg">
-
-</div>
+  </div>
+</Affix>
 </template>
 <script>
 export default {
