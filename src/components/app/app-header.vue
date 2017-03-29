@@ -1,6 +1,6 @@
 <template>
 <div class="app-header">
-    <img src="../../assets/images/title.jpg">
+    <!--<img src="../../assets/images/title.jpg">-->
 
 </div>
 </template>
